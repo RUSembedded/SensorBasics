@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         c_b_r_k1[4] = 1;
         c_b_r_k1[8] = 1;
     }
-
+//
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
