@@ -1,12 +1,50 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="test" android:layout_width="wrap_content"
+    <TableRow>
+        <TextView
+            android:text="Accelerometer: "/>
+
+        <TextView android:text="[]" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtAccel"/>
 
-</RelativeLayout>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Rot Accel.: "/>
+         <TextView android:text="[]" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRotAccel"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Gyro: "/>
+        <TextView android:text="[]" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGyro"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="RKM: "/>
+        <TextView android:maxLines="3"
+            android:id="@+id/txtDCM"
+            android:text="[]\n[]\n[]"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:text="Calibrate"
+            android:onClick="btnCalibrate"/>
+    </TableRow>
+
+
+
+
+</TableLayout>
